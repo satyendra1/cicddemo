@@ -41,7 +41,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v5.6
         with:
     # Name of the Docker image
-         image: santyrocker/java-program
+         image: santyrocker/javabuild
     # Tags override for Docker image
          
     # Target Docker registry
