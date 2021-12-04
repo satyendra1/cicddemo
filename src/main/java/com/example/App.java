@@ -20,6 +20,7 @@ public class App {
         Logger log = LoggerFactory.getLogger(App.class);
         log.info("Java app started");
         log.info("hello satya");
+        log.info("hello advika");
     }
 
     public String getStatus() {
