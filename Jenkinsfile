@@ -8,8 +8,6 @@ node('workernode') {
         sh './gradlew build'
     }
     stage('DockerBuild') {
-        def customImage = docker.build("my-image:${env.BUILD_ID}")
-        customImage.push()
-        customImage.push('latest')
+        sh "docker image build -t $JOB_NAME:$BUILD_ID"
     }
 }
