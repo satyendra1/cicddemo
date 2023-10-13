@@ -4,6 +4,7 @@ node('workernode') {
     }
     stage('Build') {
         // Execute gradle build associated with this project.
+        sh 'chmod +x gradlew'
         sh './gradlew build'
     }
     stage('DockerBuild') {
