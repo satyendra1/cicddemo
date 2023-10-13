@@ -8,6 +8,6 @@ node('workernode') {
         sh './gradlew build'
     }
     stage('DockerBuild') {
-        sh "docker image build -t $JOB_NAME:$BUILD_ID"
+        sh "docker image build -t $JOB_NAME:$BUILD_ID ."
     }
 }
